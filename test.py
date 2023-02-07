@@ -14,7 +14,7 @@ st.title("Streamlit test Web app")
 
 uploaded_file=st.text_input("Please provide a account number",value='C1557090372')
 
-bob = conn.runInstalledQuery(queryName = "output", params={"id":uploaded_file})
+bob = conn.runInstalledQuery(queryName = "output", params={"account_id":uploaded_file})
 
 df=pd.DataFrame(columns=["acc_no","hops","cid","in_giant_component"])
 acc_no=[]
